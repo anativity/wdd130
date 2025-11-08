@@ -20,9 +20,9 @@ h1 {
 main img {
     width: 150px;
     height: auto;
-    border: 0;
-    padding: 0;
-    box-shadow: 1px #333;
+    border: 1px;
+    padding: 1px;
+    box-shadow: 10px 10px #33333;
 }
 
 img {
