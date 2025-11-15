@@ -8,7 +8,7 @@
     --primary-color: #005a05;
     --secondary-color: #f4a261;
     --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --accent2-color: #554314;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --page-background: #f0f0f0;
@@ -46,6 +46,11 @@ nav, p, section, article {
 .hero h1 {
     position: absolute;
     color: var(--secondary-color);
+    top: 20px;
+    left: 50%;
+    width: 80%;
+    padding: 15px;
+    text-align: center;
 }
 
 .hero article {
