@@ -1,5 +1,10 @@
+:root{
+    --width-main: 150px;
+    --main-background-color: darkblue;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--main-background-color);
     padding: 10px;
 }
 
@@ -14,11 +19,11 @@ main{
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-background-color);
 }
 
 main img {
-    width: 150px;
+    width: var(--width-main);
     height: auto;
     border: 1px;
     padding: 1px;
@@ -26,7 +31,7 @@ main img {
 }
 
 img {
-    width: 150px;
+    width: var(--width-main);
     height: auto;
     border: 1px solid black;
     padding: 2px;
