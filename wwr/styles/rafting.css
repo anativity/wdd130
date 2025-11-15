@@ -24,7 +24,7 @@ header, main, footer {
 }
 
 h1, h2 {
-    font-family: var(--headeing-font);
+    font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
@@ -41,6 +41,14 @@ nav, p, section, article {
     position: relative;
 }
 
+.hero h1 {
+    position: absolute;
+    color: var(--secondary-color);
+}
+.hero article {
+    position: absolute;
+    color: var(--accent2-color);
+}
 .hero img {
     display: block;
     width: 100%;
