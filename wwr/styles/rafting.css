@@ -51,7 +51,6 @@ nav, p, section, article {
     padding: 16px;
     max-width: 100%;
     background-color: var(--page-background);
-    background-
     color: var(--accent2-color);
 }
 .hero article img {
