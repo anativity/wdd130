@@ -59,6 +59,7 @@ h1 {
     color: var(--main-background-color);
     padding: .5rem;
     border-bottom: #3b293e dashed;
+    margin-bottom: 1rem;
 }
 
 main img {
