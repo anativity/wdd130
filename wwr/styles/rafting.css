@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+main h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+  margin: 2rem 0 1rem;
+}
+
 :root {
     --primary-color: #005a05;
     --secondary-color: #2c225f;
@@ -26,7 +34,7 @@ header {
     gap: 1rem;
     padding: 1rem;
     margin: 0 auto;
-    background-color: #124254;
+    background-color: #041f29;
     border: 1px solid #ccc;
 }
 
@@ -57,8 +65,6 @@ nav ul li a {
 .hero, .history, .adventure {
     border: 2px solid #2c225f;
     width: 100%;
-    margin: 0;
-    padding: 2rem;
     box-sizing: border-box;
     margin-bottom: 2rem;
 }
@@ -73,12 +79,6 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-    color: var(--secondary-color);
-}
-
 .socialmedia a {
     display: inline-block;
     text-decoration: none;
@@ -86,8 +86,8 @@ nav, p, section, article {
 
 .hero {
     position: relative;
-    height: 400px;
-    overflow: hidden;
+    height: 500px;
+    overflow: visible;
 }
 
 .hero img {
@@ -98,42 +98,54 @@ nav, p, section, article {
 }
 
 .hero article {
-    position: absolute;
-    bottom: 15px;
-    left: 70px;
-    right: 70px;
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--page-background);
-    border: none;
-    color: var(--accent2-color);
-    box-sizing: border-box;
+  position: absolute;
+  bottom: 15px;
+  left: 70px;
+  right: 70px;
+  padding: 1rem;
+  background-color: var(--page-background);
+  border-radius: 6px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.hero article::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .hero article p {
-    flex: 1;
-    margin: 10;
-    font-size: 1rem;
-    color: var(--accent2-color);
+  line-height: 1.4;
+  font-size: 1rem;
+  color: var(--accent2-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 .hero article img {
-   width: 200px;
+   float: right;
+   margin-left: 1rem;
+   max-width: 40%;
    height: auto;
-   border-radius: 4px;
+}
+
+.hero article::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .hero h1 {
-    position: static;
-    top: 20px;
-    left: 50%;
-    width: 100%;
-    padding: .5rem 1rem;
-    text-align: center;
-    font-family: var(--heading-font);
-    color: var(--accent2-color);
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: var(--heading-font);
+  color: var(--accent2-color);
+  padding: .5rem 1rem;
+  z-index: 2;
 }
 
 
