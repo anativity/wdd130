@@ -109,12 +109,6 @@ h1, h2 {
   z-index: 1;
 }
 
-.hero article::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .hero article p {
   line-height: 1.4;
   font-size: 1rem;
