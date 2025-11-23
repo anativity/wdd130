@@ -34,7 +34,7 @@ header {
     gap: 1rem;
     padding: 1rem;
     margin: 0 auto;
-    background-color: #2a6f92;
+    background-color: #160d40;
     border: 1px solid #ccc;
 }
 
@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 .hero, .history, .adventure {
-    border: 2px solid #2c225f;
+    border: 2px solid #160d40;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 2rem;
