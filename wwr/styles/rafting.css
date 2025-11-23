@@ -110,7 +110,6 @@ h1, h2 {
 }
 
 .hero article p {
-  line-height: 1.4;
   font-size: 1rem;
   color: var(--accent2-color);
   margin: 0;
