@@ -43,7 +43,6 @@ header {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    margin: 0 auto;
     background-color: #160d40;
     border: 1px solid #ccc;
 }
@@ -51,6 +50,7 @@ header {
 header img {
     max-height: 80px;
     justify-self: center;
+    grid-template-columns: 1000px;
 }
 
 header nav ul {
