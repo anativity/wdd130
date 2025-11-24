@@ -39,7 +39,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 150px auto;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
@@ -49,8 +49,6 @@ header {
 
 header img {
     max-height: 80px;
-    justify-self: center;
-    grid-template-columns: 1000px;
 }
 
 header nav ul {
@@ -151,6 +149,11 @@ h2 {
 .history {
     padding: 1rem;
     align-items: center;
+}
+
+.history h2,
+.adventure h2 {
+    grid-template-columns: 1/-1;
 }
 
 .history-grid {
