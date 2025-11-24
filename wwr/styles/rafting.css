@@ -107,7 +107,7 @@ h2 {
     left: 70px;
     right: 70px;
     padding: 1rem;
-    background-color: var(--page-background);
+    background-color: #f0f0f073;
     border-radius: 6px;
     box-sizing: border-box;
     z-index: 1;
@@ -124,7 +124,7 @@ h2 {
 .hero article img {
     float: right;
     margin-left: 1rem;
-    max-width: 40%;
+    max-width: 200px;
     height: auto;
 }
 
@@ -143,6 +143,7 @@ h2 {
     color: var(--accent2-color);
     padding: .5rem 1rem;
     z-index: 2;
+    background-color: #f0f0f073;
 }
 
 
@@ -153,7 +154,7 @@ h2 {
 
 .history h2,
 .adventure h2 {
-    grid-template-columns: 1/-1;
+    grid-column: 1/-1;
 }
 
 .history-grid {
@@ -208,14 +209,10 @@ footer {
     padding: 1rem;
     border: 2px solid #2c225f;
     display: flex;
+    background-color: #3f3f3f;
+    color: #f3f3f3;
     justify-content: space-between;
     align-items: center;
-}
-
-footer p {
-    font-family: var(--body-font);
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
 }
 
 .socialmedia {
