@@ -71,15 +71,40 @@ nav ul li a {
     border-radius: 6px;
 }
 
+.contact-info {
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    border-bottom: 2px solid var(--accent1-color);
+    color: var(--accent1-color);
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
 .hero,
 .history,
-.adventure {
+.adventure,
+.serve {
     border: 2px solid #160d40;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 2rem;
 }
 
+.serve {
+    gap: 2rem;
+    max-width: 1000px;
+    padding: 2rem;
+}
+.serve h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
 
 h1,
 h2 {
@@ -154,7 +179,8 @@ h2 {
 }
 
 .history h2,
-.adventure h2 {
+.adventure h2,
+.serve h2 {
     grid-column: 1/-1;
 }
 
@@ -180,7 +206,8 @@ main h2 {
 }
 
 
-.adventure {
+.adventure,
+.serve {
     padding: 1rem;
 }
 
@@ -208,7 +235,6 @@ main h2 {
 
 footer {
     padding: 1rem;
-    border: 2px solid #2c225f;
     display: flex;
     background-color: #3f3f3f;
     color: #f3f3f3;
@@ -216,14 +242,88 @@ footer {
     align-items: center;
 }
 
+.serve {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #160d40;
+    box-sizing: border-box;
+}
+
+.serve figure {
+    text-align: center;
+}
+
+.serve img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
 .socialmedia {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
+}
+
+.serve h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 .socialmedia a img {
     height: 30px;
     width: 30px;
     display: block;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-top: 2px solid var(--accent1-color);
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: 2;
+}
+.form map {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form label {
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+
+.form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
 }
