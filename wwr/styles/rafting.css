@@ -220,7 +220,7 @@ footer {
     padding: 1rem;
     display: flex;
     background-color: #e0e0e0;
-    color: #ffffff;
+    color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
 }
