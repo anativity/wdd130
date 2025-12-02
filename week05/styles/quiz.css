@@ -31,7 +31,7 @@ select, button {
 }
 
 button {
-    background-color: navy;
+    background-color: rgb(86, 28, 72);
     color: #fff;
     margin: 0 auto;
     display: block;
