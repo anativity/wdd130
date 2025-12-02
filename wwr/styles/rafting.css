@@ -43,6 +43,7 @@ header {
     padding: 1rem;
     background-color: #3f3f3f;
     border: 1px solid #ccc;
+    color: #fff;
 }
 
 header nav,
@@ -232,6 +233,14 @@ footer {
     color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
+    color: #fff;
+}
+
+footer *,
+footer nav,
+footer nav ul,
+footer nav ul li {
+  background-color: transparent !important;
 }
 
 .serve {
