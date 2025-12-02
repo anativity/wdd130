@@ -5,7 +5,7 @@
     --accent2-color: #554314;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-    --page-background: #f0f0f0;
+    --page-background: #f6f8f8;
 }
 
 * {
@@ -41,8 +41,17 @@ header {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background-color: #e0e0e0;
+    background-color: #3f3f3f;
     border: 1px solid #ccc;
+}
+
+header nav,
+header nav ul,
+header nav ul li,
+footer nav,
+footer nav ul,
+footer nav ul li {
+    background-color: transparent;
 }
 
 header img {
@@ -71,7 +80,7 @@ nav ul li a {
 .contact-info {
     text-align: center;
     padding: 1rem;
-    background-color: transparent; /* removed gray/white background */
+    background-color: transparent;
     border-bottom: 2px solid var(--accent1-color);
     color: var(--accent1-color);
 }
@@ -118,7 +127,7 @@ h2 {
     left: 70px;
     right: 70px;
     padding: 1rem;
-    background-color: #f0f0f073;
+    background-color: var(--page-background);
     border-radius: 6px;
     box-sizing: border-box;
     z-index: 1;
@@ -219,7 +228,7 @@ main h2 {
 footer {
     padding: 1rem;
     display: flex;
-    background-color: #e0e0e0;
+    background-color: #3f3f3f;
     color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
