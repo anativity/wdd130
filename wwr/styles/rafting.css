@@ -135,7 +135,7 @@ h2 {
 }
 
 .hero article p {
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -163,8 +163,9 @@ h2 {
     color: var(--accent2-color);
     padding: .5rem 1rem;
     z-index: 2;
-    background-color: #f0f0f073;
+    background-color: #f0f0f0ca;
 }
+
 
 .history {
     padding: 1rem;
@@ -196,6 +197,20 @@ main h2 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
     margin: 2rem 0 1rem;
+}
+
+.about p {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding: 1rem;
+    background-color: #e7ebf1;
+}
+
+.about {
+    font-size: 1.5rem;
+    background-color: #e7ebf1;
+    box-sizing: border-box;
+    border-radius: 6px;
 }
 
 .adventure,
@@ -238,7 +253,7 @@ footer *,
 footer nav,
 footer nav ul,
 footer nav ul li {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .serve {
@@ -324,5 +339,519 @@ footer nav ul li {
     border: none;
     border-radius: 6px;
     font-weight: bold;
+    font-size: 1.5rem;
     cursor: pointer;
+}
+
+.about img {
+    width: 450px;
+}
+
+.offerings h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.offerings article {
+    text-align: center;
+}
+
+.offerings img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.offerings h3 {
+    margin: 0.5rem 0;
+}
+
+.offerings p {
+    font-size: 1rem;
+}
+
+:root {
+    --primary-color: #005a05;
+    --secondary-color: #2c225f;
+    --accent1-color: #000;
+    --accent2-color: #554314;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --page-background: #f6f8f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--page-background);
+}
+
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    margin: 2rem 0 1rem;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #3f3f3f;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+header nav,
+header nav ul,
+header nav ul li,
+footer nav,
+footer nav ul,
+footer nav ul li {
+    background-color: transparent;
+}
+
+header img {
+    max-height: 80px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    border-bottom: 2px solid var(--accent1-color);
+    color: var(--accent1-color);
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.hero,
+.history,
+.adventure,
+.serve {
+    border: 2px solid #160d40;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.socialmedia a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 15px;
+    left: 70px;
+    right: 70px;
+    padding: 1rem;
+    background-color: var(--page-background);
+    border-radius: 6px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.hero article p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 1rem;
+    max-width: 200px;
+    height: auto;
+}
+
+.hero article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    padding: .5rem 1rem;
+    z-index: 2;
+    background-color: #f0f0f0ca;
+}
+
+
+.history {
+    padding: 1rem;
+    align-items: center;
+}
+
+.history h2,
+.adventure h2,
+.serve h2 {
+    grid-column: 1/-1;
+}
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.history-grid img {
+    max-width: 100%;
+    height: auto;
+    grid-column: 2;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    margin: 2rem 0 1rem;
+}
+
+.about p {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    padding: 1rem;
+    background-color: #f1f2f4;
+}
+
+.about {
+    font-size: 1.5rem;
+    background-color: #e7ebf1;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.adventure,
+.serve {
+    padding: 1rem;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventure-grid figure {
+    text-align: center;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.adventure-grid figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+    background-color: #3f3f3f;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+footer *,
+footer nav,
+footer nav ul,
+footer nav ul li {
+    background-color: transparent !important;
+}
+
+.serve {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #160d40;
+    box-sizing: border-box;
+}
+
+.serve h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.serve figure {
+    text-align: center;
+}
+
+.serve img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.socialmedia a img {
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-top: 2px solid var(--accent1-color);
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    grid-column: 2;
+}
+
+.form .map {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form label {
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.about img {
+    width: 450px;
+}
+
+.offerings {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.offerings h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.offerings article {
+    text-align: center;
+}
+
+.offerings img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.offerings h3 {
+    margin: 0.5rem 0;
+}
+
+.offerings p {
+    font-size: 1rem;
+}
+
+.offerings {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+    grid-column: 1 / -1;
+    ;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.offerings-grid article {
+    text-align: center;
+}
+
+.offerings-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.offerings-grid article {
+    text-align: center;
+}
+
+.offerings-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.trips {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.call_to_action {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.call_to_action h1 {
+    color: var(--primary-color);
+}
+
+.contact_button {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.trip-descriptions h2,
+.trip-table h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--accent2-color);
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.trip-grid article {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.trip-grid img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ccc;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.trip-table th {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.trip-table td {
+  background: #f6f8f8;
 }
