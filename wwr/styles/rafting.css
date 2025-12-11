@@ -604,13 +604,6 @@ footer {
     color: #fff;
 }
 
-footer *,
-footer nav,
-footer nav ul,
-footer nav ul li {
-    background-color: transparent !important;
-}
-
 .serve {
     display: grid;
     grid-template-columns: repeat(3, 150px);
@@ -702,12 +695,6 @@ footer nav ul li {
     width: 450px;
 }
 
-.offerings {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
 .offerings h2 {
     text-align: center;
     margin-bottom: 1rem;
@@ -753,10 +740,6 @@ footer nav ul li {
     width: 100%;
     height: auto;
     border-radius: 6px;
-}
-
-.offerings-grid article {
-    text-align: center;
 }
 
 .offerings-grid img {
